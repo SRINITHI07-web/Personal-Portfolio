@@ -7,20 +7,27 @@
 
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #222;
-    background-color: hsla(42, 66%, 26%, 0.832);
+    background-color: hsla(40, 12%, 15%, 0.832);
+    font-family: Arial, sans-serif;
+    background-image: url(portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
+
 
 /* Header */
 header {
-    background-color: #0f1012bb;
+    background-color: #0f101281;
     color: #d8ba55;
     padding: 10px;
 }
 
 /* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -48,17 +55,25 @@ main {
 
 section {
     margin-bottom: 40px;
+    color: white;
 }
 
 /* Headings */
-h1,
+h1{
+    margin-bottom: 15px;
+}
 h2,
 h3 {
     margin-bottom: 15px;
+    color: #b5791ff4;
+}
+p{
+    color: white;
 }
 
 span{
     text-align: center;
+    color: #d8ba55;
 }
 
 /* Links */
@@ -81,6 +96,7 @@ form {
 
 form div {
     margin-bottom: 20px;
+    color: white;
 }
 
 label {
@@ -114,7 +130,6 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font: inherit;
 }
 
 button:hover {
@@ -144,3 +159,30 @@ footer {
     }
 }
 
+ /* Mobile */
+@media (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  aside { display: none; }
+}
+
+/* Mobile background */
+@media (max-width: 767px) {
+  body {
+    background-image: url("portfolio\ img.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Tablet background */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-image: url("portfolio\ img.jpg");
+  }
+}
