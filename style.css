@@ -1,3 +1,4 @@
+/* White and Dark Mode */
 :root {
     color-scheme: light;
     --page-background: #35302b;
@@ -63,7 +64,6 @@ header {
 }
 
 /* Navigation */
-
 nav ul {
     list-style: none;
     display: flex;
