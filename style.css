@@ -1,10 +1,10 @@
 :root {
     color-scheme: light;
-    --page-background: #f4efe6;
-    --surface: rgba(255, 252, 246, 0.9);
-    --surface-strong: #fffaf0;
-    --text: #27231f;
-    --muted-text: #655b51;
+    --page-background: #35302b;
+    --surface: rgba(39, 35, 31, 0.92);
+    --surface-strong: #45403a;
+    --text: #ffffff;
+    --muted-text: #ffffff;
     --accent: #8a541d;
     --accent-contrast: #fffaf0;
     --border: #c9bba8;
@@ -58,6 +58,10 @@ header {
     box-shadow: 0 2px 12px var(--shadow);
 }
 
+[data-theme="light"] header {
+    background-color: #ffffffb6;
+}
+
 /* Navigation */
 
 nav ul {
@@ -100,6 +104,10 @@ h3 {
     color: var(--accent);
 }
 p{
+    color: #ffffff;
+}
+
+[data-theme="dark"] p {
     color: var(--muted-text);
 }
 
