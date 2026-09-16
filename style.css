@@ -1,3 +1,33 @@
+:root {
+    color-scheme: light;
+    --page-background: #f4efe6;
+    --surface: rgba(255, 252, 246, 0.9);
+    --surface-strong: #fffaf0;
+    --text: #27231f;
+    --muted-text: #655b51;
+    --accent: #8a541d;
+    --accent-contrast: #fffaf0;
+    --border: #c9bba8;
+    --focus: #b97718;
+    --input-background: #fffaf0;
+    --shadow: rgba(60, 42, 25, 0.16);
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --page-background: #17191d;
+    --surface: rgba(20, 22, 27, 0.9);
+    --surface-strong: #22252b;
+    --text: #f5eee2;
+    --muted-text: #d5c8b7;
+    --accent: #e0bb69;
+    --accent-contrast: #1c1b1a;
+    --border: #776b5d;
+    --focus: #ffca62;
+    --input-background: #22252b;
+    --shadow: rgba(0, 0, 0, 0.28);
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -8,22 +38,24 @@
 /* Base styles */
 body {
     line-height: 1.6;
-    color: #222;
-    background-color: hsla(40, 12%, 15%, 0.832);
+    color: var(--text);
+    background-color: var(--page-background);
     font-family: Arial, sans-serif;
     background-image: url(portfolio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
+    transition: background-color 180ms ease, color 180ms ease;
 }
 
 
 /* Header */
 header {
-    background-color: #0f101281;
-    color: #d8ba55;
+    background-color: var(--surface);
+    color: var(--accent);
     padding: 10px;
+    box-shadow: 0 2px 12px var(--shadow);
 }
 
 /* Navigation */
@@ -37,7 +69,7 @@ nav ul {
 }
 
 nav a {
-    color: #d8ba55;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -55,7 +87,7 @@ main {
 
 section {
     margin-bottom: 40px;
-    color: white;
+    color: var(--text);
 }
 
 /* Headings */
@@ -65,24 +97,24 @@ h1{
 h2,
 h3 {
     margin-bottom: 15px;
-    color: #b5791ff4;
+    color: var(--accent);
 }
 p{
-    color: white;
+    color: var(--muted-text);
 }
 
 span{
     text-align: center;
-    color: #d8ba55;
+    color: var(--accent);
 }
 
 /* Links */
 a {
-    color: #0e0f0f;
+    color: var(--accent);
 }
 
 a:focus {
-    outline: 3px solid #ffcc65;
+    outline: 3px solid var(--focus);
     outline-offset: 3px;
     cursor: pointer;
 }
@@ -96,7 +128,7 @@ form {
 
 form div {
     margin-bottom: 20px;
-    color: white;
+    color: var(--text);
 }
 
 label {
@@ -109,43 +141,42 @@ input,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #9c8568;
+    border: 2px solid var(--border);
     border-radius: 10px;
     font: inherit;
-    background-color: #221d1a;
-    color: #f7a854;
+    background-color: var(--input-background);
+    color: var(--text);
     
 }
 
 input:focus,
 textarea:focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid var(--focus);
     outline-offset: 2px;
 }
 
 button {
     padding: 12px 20px;
-    background-color: #221d1a;
-    color: #bc7614;
-    border: none;
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+    border: 1px solid var(--accent);
     border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d8ae59;
-    color: #221d1a;
+    filter: brightness(1.08);
 }
 
 button:focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid var(--focus);
     outline-offset: 3px;
 }
 
 /* Footer */
 footer {
-    background-color: #11131649;
-    color: #f7a854;
+    background-color: var(--surface);
+    color: var(--muted-text);
     text-align: center;
     padding: 20px;
     margin-top: 10%;
@@ -185,4 +216,25 @@ footer {
   body {
     background-image: url("portfolio\ img.jpg");
   }
+}
+
+.theme-toggle {
+    margin-top: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --page-background: #17191d;
+        --surface: rgba(20, 22, 27, 0.9);
+        --surface-strong: #22252b;
+        --text: #f5eee2;
+        --muted-text: #d5c8b7;
+        --accent: #e0bb69;
+        --accent-contrast: #1c1b1a;
+        --border: #776b5d;
+        --focus: #ffca62;
+        --input-background: #22252b;
+        --shadow: rgba(0, 0, 0, 0.28);
+    }
 }
