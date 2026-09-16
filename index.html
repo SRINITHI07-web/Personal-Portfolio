@@ -12,56 +12,90 @@
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand" aria-label="Sri Nithi home">
+                <span class="brand-mark">SN</span>
+                <div>
+                    <h1>Sri Nithi M</h1>
+                    <p>Web Developer</p>
+                </div>
+            </div>
 
-    <header>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <h1>Sri Nithi M</h1>
-
-        <span>Web Developer</span>
-
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-            Dark mode
-        </button>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                Dark mode
+            </button>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
+        <section class="hero" aria-labelledby="welcome-heading">
+            <div class="hero-copy">
+                <p class="eyebrow">Hello, I’m Sri Nithi M</p>
+                <h2 id="welcome-heading">Creative web developer building digital experiences that feel effortless.</h2>
+                <p>
+                    I design and develop responsive websites that combine strong visual storytelling,
+                    clean code, and smooth user journeys for people and businesses alike.
+                </p>
 
-        <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome to My Portfolio</h2>
+                <div class="hero-actions">
+                    <a class="button primary" href="project.html">View Projects</a>
+                    <a class="button secondary" href="contact.html">Contact Me</a>
+                </div>
 
-            <p>
-                I am a passionate web developer interested in
-                creating accessible and user-friendly websites.
-            </p>
+                <ul class="highlights" aria-label="Key strengths">
+                    <li>Responsive design</li>
+                    <li>Accessible UI</li>
+                    <li>Front-end development</li>
+                </ul>
+            </div>
 
-
+            <div class="image-placeholder" aria-label="Profile image placeholder">
+                <span><img src="image/Photo Sri.jpeg" alt="Portrait of Sri Nithi"></span>
+            </div>
         </section>
 
-        <section aria-labelledby="skills-heading">
-            <h2 id="skills-heading">My Skills</h2>
-
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-            </ul>
+        <section class="info-grid" aria-label="Professional overview">
+            <article class="info-card">
+                <h3>What I do</h3>
+                <p>I create polished, user-friendly websites with a focus on clarity, accessibility, and performance.</p>
+            </article>
+            <article class="info-card">
+                <h3>My approach</h3>
+                <p>I turn ideas into simple interfaces that balance functionality, aesthetics, and responsive behavior.</p>
+            </article>
+            <article class="info-card">
+                <h3>Tools</h3>
+                <p>HTML, CSS, JavaScript, responsive layouts, and modern front-end design principles.</p>
+            </article>
         </section>
 
+        <section class="skills-section" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Core Skills</h2>
+            <div class="skill-grid">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+                <span>UI Design</span>
+                <span>Accessibility</span>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Sri Nithi. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p>&copy; 2026 Sri Nithi. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>

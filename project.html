@@ -1,51 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Sri Nithi, a passionate web developer.">
+    <meta name="description" content="A showcase of Sri Nithi’s projects and web development work.">
     <meta name="author" content="Sri Nithi">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Projects | Sri Nithi</title>
-    
 </head>
 
 <body>
-     <header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand" aria-label="Sri Nithi home">
+                <span class="brand-mark">SN</span>
+                <div>
+                    <h1>Projects</h1>
+                    <p>Web Developer</p>
+                </div>
+            </div>
 
-        <h1>Projects</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                Dark mode
+            </button>
+        </div>
+    </header>
 
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-            Dark mode
-        </button>
+    <main class="container page-content">
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Selected Work</h2>
 
-      </header>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-tag">Front-end</div>
+                    <h3>Coffee Website</h3>
+                    <p>
+                        A warm and inviting café landing page designed to highlight products,
+                        storytelling, and a smooth browsing experience for customers.
+                    </p>
+                    <ul>
+                        <li>Responsive layout</li>
+                        <li>Brand-focused design</li>
+                        <li>Interactive UI</li>
+                    </ul>
+                    <a class="button primary" href="https://coffeweb-60031148294.development.catalystserverless.in/app/index.html" target="_blank" rel="noreferrer">View Project</a>
+                </article>
 
-    <section aria-labelledby="projects-heading">
+                <article class="project-card">
+                    <div class="project-tag">Portfolio</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal brand website concept built to showcase skills, experience,
+                        and project highlights in a clean and approachable way.
+                    </p>
+                    <ul>
+                        <li>Multi-page structure</li>
+                        <li>Modern styling</li>
+                        <li>Theme toggling</li>
+                    </ul>
+                    <a class="button secondary" href="index.html">Explore Site</a>
+                </article>
 
-        <h2 id="projects-heading">My Projects</h2>
+                <article class="project-card">
+                    <div class="project-tag">Internship</div>
+                    <h3>Frontend Internship Project</h3>
+                    <p>
+                        A front-end development project completed during my internship, focused on
+                        building a responsive and user-friendly web interface using HTML, CSS, and JavaScript.
+                    </p>
+                    <ul>
+                        <li>Responsive web pages</li>
+                        <li>Clean UI design</li>
+                        <li>Front-end implementation</li>
+                    </ul>
+                    <a class="button secondary" href="https://cognifyz-tech-60031148294.development.catalystserverless.in/app/index.html">View Internship Experience</a>
+                </article>
+            </div>
+        </section>
+    </main>
 
-        <article>
-            <h3>Coffee Website</h3>
-
-            <p>A strong coffee website project combines a warm visual theme, clear product or café information, and simple interactive features like menus, ordering, or storytelling about the coffee brand.</p>
-
-        <a href="https://coffeweb-60031148294.development.catalystserverless.in/app/index.html" aria-label="View Coffee Website Project"><button>View Project</button></a>
-        </article>
-
-    </section>
-
-
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; 2026 Sri Nithi.</p>
+        </div>
+    </footer>
 </body>
 </html>
