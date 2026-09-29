@@ -46,13 +46,17 @@
                 </p>
 
                 <ul class="contact-list">
-                    <li>Email: srinithidomain7@gmail.com</li>
+                    <li>Email: srinithi.webdev@gmail.com</li>
                     <li>Location: India</li>
                     <li>Availability: Open to freelance projects</li>
                 </ul>
             </div>
 
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/srinithi.webdev@gmail.com" method="POST" accept-charset="UTF-8">
+                <input type="hidden" name="_subject" value="New message from your portfolio website">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
                 <div>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" autocomplete="name" required>
@@ -74,6 +78,7 @@
                 </div>
 
                 <button type="submit" class="button primary">Send Message</button>
+                <p class="form-status" aria-live="polite"></p>
             </form>
         </section>
     </main>
