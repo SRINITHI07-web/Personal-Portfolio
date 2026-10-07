@@ -418,6 +418,10 @@ main {
     gap: 1rem;
 }
 
+.project-card .button {
+    margin-top: auto;
+}
+
 /* Contact Page */
 .contact-page {
     padding: 2rem;
